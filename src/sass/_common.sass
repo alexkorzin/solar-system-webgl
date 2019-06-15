@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Playfair+Display|Roboto:300,400,500|Tulpen+One&display=swap')
+
+=fo
+	font-family: 'Oswald', sans-serif
+
+=ft
+	font-family: 'Tulpen One', cursive
+
+=fr
+	font-family: 'Roboto', sans-serif
+
+=fp
+	font-family: 'Playfair Display', serif
+
+body
+	color: white
+	background: #000
+
+
+.logo
+	+fp
+	font-size: 38px
+	letter-spacing: -0.2
+	text-transform: uppercase
+	position: relative
+	&:after, &:before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 1px
+		left: 0
+		background: white
+	&:after
+		top: 5px
+	&:before
+		bottom: 1px
+
+.control-button
+	background: rgba(255, 255, 255, 0.1)
+	padding: 10px
+	height: 52px
+	width: 52px
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-bottom: 12px
+	pointer-events: auto
+	cursor: pointer
+	position: relative
+
+	i
+		position: relative
+		left: -2px
+
+	&:hover
+		background: rgba(255, 255, 255, 0.3)
+
+	&__list:hover .planet-menu
+		display: block!important
+
+.top-side
+	display: flex
+	position: relative
+	&__back
+		+fr
+		color: white
+		text-decoration: none
+		font-size: 18px
+		pointer-events: auto
+	&__icon-back
+		font-size: 14px
+	&__logo
+		position: absolute
+		left: 50%
+		transform: translate(-50%, 0)
+	&__controls
+		margin-left: auto
+
+.planet-menu
+	display: none!important
+	position: absolute
+	top: 0
+	right: 100%
+	display: flex
+	flex-direction: column
+	&__list
+		max-height: 34vh
+		overflow: hidden
+		overflow-y: scroll
+		box-sizing: border-box
+		&::-webkit-scrollbar-track
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+			border-radius: 10px
+			background-color: rgba(255, 255, 255, 0.1)
+
+		&::-webkit-scrollbar
+			width: 8px
+			background-color: rgba(255, 255, 255, 0.1)
+
+		&::-webkit-scrollbar-thumb
+			border-radius: 10px
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+			background-color: #555
+	&__head
+		background: rgba(255, 255, 255, 0.3)
+		font-size: 18px
+		line-height: 1.64
+		text-transform: uppercase
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 116px
+		white-space: nowrap
+		padding: 0px 50px 0px 30px
+		+fo
+	&__item
+		background: rgba(255, 255, 255, 0.1)
+		font-size: 16px
+		+fr
+		opacity: 0.8
+		padding: 15px 50px 15px 30px
+		&:hover
+			background: rgba(255, 255, 255, 0.3)
+
+
+.mid-side
+	margin-top: auto
+	margin-bottom: -160px
+
+.about-planet
+	&__head
+		+fo
+		font-size: 26px
+		letter-spacing: 2.5%
+		line-height: 1.33
+		margin-bottom: 30px
+		text-transform: uppercase
+		font-weight: 600
+	&__text
+		+fr
+		line-height: 1.74
+		font-size: 16px
+		letter-spacing: 0.2
+		max-width: 295px
+		font-weight: 300
+		opacity: 0.6
+
+		max-height: 310px
+		overflow: scroll
+		overflow-x: hidden
+		padding-right: 25px
+		pointer-events: auto
+
+		&::-webkit-scrollbar-track
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+			border-radius: 10px
+			background-color: transparent
+
+		&::-webkit-scrollbar
+			width: 8px
+			background-color: transparent
+
+		&::-webkit-scrollbar-thumb
+			border-radius: 10px
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+			background-color: #555
+
+.bottom-side
+	display: flex
+	justify-content: space-between
+	margin-top: auto
+	
+.planet-name
+	+ft
+	font-size: 140px
+	align-self: flex-end
+	position: relative
+	bottom: -28px
+	width: 280px
+	position: relative
+	height: 140px
+	overflow: hidden
+	&__item
+		position: absolute
+		transform: translate(0, -120%)
+		&_active
+			transform: translate(0, 0%)
+
+.planet-data
+	margin-right: auto
+	margin-left: 2vw
+	display: flex
+	&__item
+		display: flex
+		align-items: flex-end
+		margin-right: 60px
+
+		&:last-child
+			margin-right: 0
+	&__name
+		+fr
+		font-size: 18px
+		margin-right: 10px
+	&__value
+		font-size: 46px
+		position: relative
+		bottom: -5px
+		+ft
+
+.service
+	text-align: right
+	&__controls
+		margin-bottom: 45px
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+	&__tip
+		+fr
+		font-size: 16px
+		font-weight: 300
+		letter-spacing: 2.5%
+		opacity: 0.5
+
+		&:last-child
+			margin-top: 10px

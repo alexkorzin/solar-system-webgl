@@ -1,0 +1,153 @@
+{
+    "Neptune": {
+        "map": "neptune",
+        "specularMap": false,
+        "specular": "0x4f748e",
+        "name": "Neptune",
+        "radius": 12000,
+        "s": 1.21,
+        "position": [
+            0,
+            0,
+            500
+        ],
+        "distanceFromSun": 30.1,
+        "dicription": "Neptune is the eighth and farthest known planet from the Sun in the Solar System. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. Neptune is 17 times the mass of Earth, slightly more massive than its near-twin Uranus."
+    },
+    "Uranus": {
+        "map": "uranus",
+        "specularMap": false,
+        "specular": "0x4f748e",
+        "name": "Uranus",
+        "radius": 25560,
+        "s": 3.73,
+        "position": [
+            0,
+            0,
+            420
+        ],
+        "distanceFromSun": 19.18,
+        "dicription": "Uranus (from the Latin name Ūranus for the Greek god Οὐρανός) is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is similar in composition to Neptune, and both have bulk chemical compositions which differ from that of the larger gas giants Jupiter and Saturn."
+    },
+    "Saturn": {
+        "map": "uranus",
+        "specularMap": false,
+        "specular": "0x4f748e",
+        "ringsMap": "saturnRings",
+        "name": "Saturn",
+        "radius": 60300,
+        "s": 1.13,
+        "position": [
+            0,
+            0,
+            350
+        ],
+        "distanceFromSun": 9.54,
+        "dicription": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius about nine times that of Earth.[13][14] It has only one-eighth the average density of Earth, but with its larger volume Saturn is over 95 times more massive."
+    },
+    "Jupiter": {
+        "map": "Jupiter",
+        "specularMap": false,
+        "specular": "0x4f748e",
+        "name": "Jupiter",
+        "radius": 71400,
+        "s": 1.59,
+        "position": [
+            0,
+            0,
+            250
+        ],
+        "distanceFromSun": 5.2,
+        "dicription": "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a giant planet with a mass one-thousandth that of the Sun, but two-and-a-half times that of all the other planets in the Solar System combined. Jupiter and Saturn are gas giants; the other two giant planets, Uranus and Neptune, are ice giants. Jupiter has been known to astronomers since antiquity.[17] It is named after the Roman god Jupiter.[18] When viewed from Earth, Jupiter can reach an apparent magnitude of −2.94, bright enough for its reflected light to cast shadows,[19] and making it on average the third-brightest natural object in the night sky after the Moon and Venus."
+    },
+    "Mars": {
+        "map": "mars",
+        "bumpMap": "marsBump",
+        "specularMap": false,
+        "specular": "0x4f748e",
+        "atmoColor": "0x331205",
+        "vertexAtmo": "vertexAtmo",
+        "fragmentAtmo": "fragmentAtmo",
+        "cameraPosition": "this.CAMERA",
+        "name": "Mars",
+        "radius": 3396,
+        "s": 1.99,
+        "position": [
+            0,
+            0,
+            160
+        ],
+        "distanceFromSun": 1.5,
+        "dicription": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury. In English, Mars carries a name of the Roman god of war, and is often referred to as the Red Planet[15][16] because the iron oxide prevalent on its surface gives it a reddish appearance that is distinctive among the astronomical bodies visible to the naked eye."
+    },
+    "Earth": {
+        "map": "earth",
+        "bumpMap": "earthBump",
+        "specularMap": "earthOceans",
+        "specular": "0xFFFFFF",
+        "cloudMap": "earthClouds",
+        "lightMap": "earthLights",
+        "atmoColor": "0x0096ff",
+        "vertexAtmo": "vertexAtmo",
+        "fragmentAtmo": "fragmentAtmo",
+        "cameraPosition": "this.CAMERA",
+        "name": "Earth",
+        "radius": 6371,
+        "s": 1.59,
+        "position": [
+            0,
+            0,
+            120
+        ],
+        "distanceFromSun": 1,
+        "dicription": "Earth is the third planet from the Sun, and the only astronomical object known to harbor life. According to radiometric dating and other sources of evidence, Earth formed over 4.5 billion years ago.[24][25][26] Earth's gravity interacts with other objects in space, especially the Sun and the Moon, Earth's only natural satellite."
+    },
+    "Venus": {
+        "map": "venus",
+        "specularMap": false,
+        "specular": "0x4f748e",
+        "atmoColor": "0x2f170a",
+        "vertexAtmo": "vertexAtmo",
+        "fragmentAtmo": "fragmentAtmo",
+        "cameraPosition": "this.CAMERA",
+        "name": "Venus",
+        "radius": 6051,
+        "s": 3.33,
+        "position": [
+            0,
+            0,
+            60
+        ],
+        "distanceFromSun": 0.72,
+        "dicription": "Venus is the second planet from the Sun, orbiting it every 224.7 Earth days.[13] It has the longest rotation period (243 Earth days) of any planet in the Solar System and rotates in the opposite direction to most other planets (meaning the Sun rises in the west and sets in the east)."
+    },
+    "Mercury": {
+        "map": "mercury",
+        "specularMap": false,
+        "specular": "0x4f748e",
+        "bumpMap": "mercury",
+        "name": "Mercury",
+        "radius": 2440,
+        "s": 0.59,
+        "position": [
+            0,
+            0,
+            30
+        ],
+        "distanceFromSun": 0.387,
+        "dicription": "Mercury is the smallest and innermost planet in the Solar System. Its orbital period around the Sun of 87.97 days is the shortest of all the planets in the Solar System. It is named after the Roman deity Mercury, the messenger of the gods."
+    },
+    "Sun": {
+        "isSun": true,
+        "name": "Sun",
+        "radius": 696000,
+        "s": 0,
+        "position": [
+            0,
+            0,
+            0
+        ],
+        "distanceFromSun": 0,
+        "dicription": "The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma,[15][16] with internal convective motion that generates a magnetic field via a dynamo process.[17] It is by far the most important source of energy for life on Earth. Its diameter is about 1.39 million kilometers (864,000 miles), or 109 times that of Earth, and its mass is about 330,000 times that of Earth. It accounts for about 99.86% of the total mass of the Solar System.[18] Roughly three quarters of the Sun's mass consists of hydrogen (~73%); the rest is mostly helium (~25%), with much smaller quantities of heavier elements, including oxygen, carbon, neon, and iron.[19]"
+    }
+}
