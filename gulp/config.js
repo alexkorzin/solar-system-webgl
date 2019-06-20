@@ -25,9 +25,10 @@ var config = {
         iconsSvg     : 'src/icons',
         // path to svg sources for iconfont task
         iconsFont    : 'src/icons',
-        fonts        : 'src/fonts',
+        fonts        : 'src/font',
         lib          : 'src/lib',
-        data         : 'src/data'
+        data         : 'src/data',
+        glsl         : 'src/glsl'
     },
     dest: {
         root : destPath,
@@ -35,9 +36,10 @@ var config = {
         css  : destPath + '/css',
         js   : destPath + '/js',
         img  : destPath + '/img',
-        fonts: destPath + '/fonts',
+        fonts: destPath + '/font',
         lib  : destPath + '/lib',
-        data : destPath + '/data'
+        data : destPath + '/data',
+        glsl : destPath + '/glsl'
     },
 
     setEnv: function(env) {

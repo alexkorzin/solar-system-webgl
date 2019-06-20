@@ -33,6 +33,8 @@ export default class Planet {
         this.lights;
         this.atmo;
 
+        this.planeMesh
+
         this.object;
 
         this.textureLoader = new THREE.TextureLoader();
@@ -44,13 +46,13 @@ export default class Planet {
     init() {
 
         if (this.isSun) {
-            let cloudTexture = this.textureLoader.load('../img/cloud.png');
-            let lavatileTexture = this.textureLoader.load('../img/sun__map.jpg');
+            let cloudTexture = this.textureLoader.load('./img/cloud.png');
+            let lavatileTexture = this.textureLoader.load('./img/sun__map.jpg');
 
             cloudTexture.wrapS = cloudTexture.wrapT = THREE.RepeatWrapping;
             lavatileTexture.wrapS = lavatileTexture.wrapT = THREE.RepeatWrapping;
 
-            const sunGeometry = new THREE.SphereGeometry(100, 80, 80);
+            const sunGeometry = new THREE.SphereGeometry(230, 80, 80);
             const sunMaterial = new THREE.ShaderMaterial({
                 vertexShader: vertexSun,
                 fragmentShader: fragmentSun,
@@ -194,6 +196,7 @@ export default class Planet {
         var geometry = new THREE.RingBufferGeometry(ii, oo, segs);
 
         var uvs = geometry.attributes.uv.array;
+
         // loop and initialization taken from RingBufferGeometry
         var phiSegments = geometry.parameters.phiSegments || 0;
         var thetaSegments = geometry.parameters.thetaSegments || 0;
@@ -206,13 +209,12 @@ export default class Planet {
             }
         }
 
-        console.log(geometry)
         this.rings = new THREE.Mesh(geometry, material);
 
 
         this.rings.receiveShadow = true;
 
-        this.rings.rotation.x = Math.PI / 2
+        this.rings.rotation.x = -Math.PI / 2
         this.rings.rotation.y = Math.PI / 20
 
     }
@@ -220,6 +222,12 @@ export default class Planet {
     initObject() {
 
         this.object = new THREE.Group();
+        // this.planeMesh = new THREE.Mesh(
+        //     new THREE.PlaneGeometry(150, 50),
+        //     new THREE.MeshBasicMaterial({ color: 'green', side: THREE.DoubleSide })
+        // );
+        // this.planeMesh.position.y += 25 + this.radius;
+        // this.object.add(this.planeMesh);
         this.object.add(this.mesh);
 
         if (this.name) {

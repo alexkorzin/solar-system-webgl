@@ -10,11 +10,27 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" media="all" href="css/app.css">
 
-  <link rel="stylesheet" href="sass/fontello.css">
-  <link rel="stylesheet" href="sass/fontello-codes.css">
+  <!-- <link rel="stylesheet" href="sass/fontello.css"> -->
+  <!-- <link rel="stylesheet" href="sass/fontello-codes.css"> -->
 </head>
 
 <body>
+  <a href="mailto:sashakorzin@gmail.com" class="sayhello">Say hello to sashakorzin@gmail.com</a>
+
+
+  <div class="preloader">
+    <div class="preloader__wrapper">
+      <div class="preloader__head staggerToTop">Solar system</div>
+      <div class="preloader__subhead staggerToTop">Loading...</div>
+      <div class="preloader__loading staggerToTop">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" stroke-dasharray="116.18" stroke-dashoffset="60"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="21" cy="21" r="18.5" stroke="#999999" stroke-width="5" stroke-miterlimit="16" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
 
   <div class="container"></div>
 
@@ -25,7 +41,9 @@
 
     <!-- begin top-side -->
     <div class="top-side">
-      <a href="#" class="top-side__back"><i class="icon-back top-side__icon-back"></i> Back to solar system</a>
+      <a href="#" class="top-side__back top-side__back_active"><i class="icon-back top-side__icon-back"></i> Back to
+        solar system</a>
+      <span class="top-side__tip ">Click on any planet <br> to teleport</span>
       <div class="top-side__logo">
         <div class="logo">solar system</div>
       </div>
@@ -45,7 +63,7 @@
           </div>
 
         </div>
-        <div class="control-button">
+        <div class="control-button control-button_hide">
           <i class="icon-hide control-button__icon"></i>
         </div>
       </div>

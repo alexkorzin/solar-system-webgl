@@ -15,8 +15,8 @@ gulp.task('copy:data', function () {
 
 gulp.task('copy:lib', function () {
     return gulp
-        .src(config.src.lib + '/**/*.*')
-        .pipe(gulp.dest(config.dest.lib));
+        .src(config.src.glsl + '/**/*.*')
+        .pipe(gulp.dest(config.dest.glsl));
 });
 
 gulp.task('copy:rootfiles', function () {
@@ -36,9 +36,9 @@ gulp.task('copy:img', function () {
 
 gulp.task('copy', [
     'copy:img',
-    // 'copy:rootfiles',
-    // 'copy:lib',
-    // 'copy:data',
+    'copy:rootfiles',
+    'copy:lib',
+    'copy:data',
     'copy:fonts'
 ]);
 gulp.task('copy:watch', function () {
